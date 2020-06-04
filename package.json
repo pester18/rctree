@@ -4,9 +4,9 @@
   "description": "",
   "main": "main.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1",
-    "lint": "eslint \"**/*.js\" && prettier -c \"**/*.js\" \"/*.json\" \"/*.md\" \".*rc\" ",
-    "fmt": "prettier --write \"**/*.js\" \"/*.json\" \"/*.md\" \".*rc\" "
+    "test": "node ./tests/call-tree-test.js && node ./tests/stringify-tree-test.js",
+    "lint": "eslint \"**/*.js\" && prettier -c \"**/*.js\" \"*.json\" \"*.md\" \".*rc\" ",
+    "fmt": "prettier --write \"**/*.js\" \"*.json\" \"*.md\" \".*rc\" "
   },
   "repository": {
     "type": "git",
